@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- My JS -->
+    <script src="main.js"></script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/996973c893.js"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+
+    <!--FAVIICON-->
+    <link rel="icon" type="imagem/png" href="timer.png" />
+
+    <title>Pomodoro App</title>
+</head>
+
+<body onload="padrao()">
+    <div class="container">
+        <!-- Header-->
+        <h1 class="text-center my-5">Time to Study with Pomodoro</h1>
+        <!--Timer-->
+        <div class="container timer">
+            <div class="row">
+                <div class="col-5">
+                    <h4 id="min"></h4>
+                </div>
+                <div class="col-5">
+                    <h4>:</h4>
+                </div>
+            </div>
+            <div class="col-5">
+                <h4 id="sec"></h4>
+            </div>
+        </div>
+    </div>
+    <!--Button Start and Reset-->
+    <div class="container d-flex justify-content-center align-items-center my-5">
+        <button class="btn" onclick="start()"><i class="fas fa-play fa-2x"></i></button>
+        <a onclick="delayUrlLoad()"><i class="fas fa-redo-alt fa-2x"></i></a>
+    </div>
+
+    </div>
+    <!--TO DO-->
+    <div id="myDIV" class="header">
+        <h2>My To Do List</h2>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
+
+    <ul id="myUL">
+
+    </ul>
+</body>
+
+</html>
